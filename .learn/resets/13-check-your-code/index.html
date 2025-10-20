@@ -4,11 +4,6 @@
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>My PostCard</title>
-
-		<link rel="preconnect" href="https://fonts.googleapis.com" />
-		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-		<link href="https://fonts.googleapis.com/css2?family=Delius&display=swap" rel="stylesheet" />
-
 		<link rel="stylesheet" href="styles.css" />
 	</head>
 	<body>
@@ -24,24 +19,24 @@
 			<div class="postcard-body">
 				<div class="body-left">
 					<p>Mira que asombroso! Esta es una postal que he creado usando HTML5 y CSS3 durante mi curso de 4GeeksAcademy.</p>
-					<br />
-					<p>Esto es muy cool, no puedo esperar a empezar a hacer más cosas!</p>
+					<p>Esto es muy cool, no puedo esperar a empezar a hcer más cosas!</p>
 				</div>
 
 				<div class="body-right">
 					<form>
-						<input type="text" id="name" placeholder="Tu Nombre" />
+						<label for="name">Tu nombre:</label>
+						<input type="text" id="name" />
 
-						<input type="email" id="email" placeholder="Tu Email" />
+						<label for="email">Tu email:</label>
+						<input type="email" id="email" />
 
-						<textarea id="message" placeholder="Tu comentario"></textarea>
+						<label for="message">Tu mensaje:</label>
+						<textarea id="message"></textarea>
 					</form>
 				</div>
 			</div>
 
-			<div class="postcard-footer">
-				<button type="submit">Envía tu postcard</button>
-			</div>
+			<div class="postcard-footer"></div>
 		</div>
 	</body>
 </html>

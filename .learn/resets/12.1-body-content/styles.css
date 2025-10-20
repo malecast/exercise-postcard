@@ -1,0 +1,45 @@
+body {
+    background: black;
+}
+* {
+    border: 1px dashed red;
+    min-height: 10px;
+}
+.postcard {
+    background: white;
+    width: 400px;
+    height: 300px;
+    margin: auto;
+}
+
+/* ESTILOS DEL ENCABEZADO */
+.postcard-header {
+    display: flex;
+    justify-content: space-between;
+    height: 50px;
+    align-items: center; 
+}
+.postcard-header img {
+    width: 50px;
+    height: 50px;
+}
+.postcard-header h1 {
+    width: 90%; 
+    margin: 0;
+}
+
+/* ESTILOS DEL CUERPO */
+.body-left p:first-child {
+    margin-top: 0;
+}
+.form {
+    border: none;
+    border-bottom: grey;
+}
+.postcard-body {
+    display: flex;
+}
+.body-left, .body-right {
+    padding: 10px; 
+    flex-grow: 1; /* Esto hace que las columnas ocupen 50% del espacio cada una */
+}
